@@ -16,7 +16,6 @@ class RegistroController: UIViewController{
     
     func configUI(){
         view.backgroundColor = .systemGreen
-        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     // MARK: - Funções Target
