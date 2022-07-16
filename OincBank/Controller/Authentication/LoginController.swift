@@ -22,10 +22,16 @@ class LoginController: UIViewController{
         obiv.image = UIImage(named: "login")
         return obiv
     }()
+    lazy var loginLabel: UILabel = {
+        let ll = UILabel()
+        ll.text = "LOGIN"
+        ll.font = UIFont.boldSystemFont(ofSize: 50)
+        ll.textColor = .white
+        return ll
+    }()
     lazy var backButton: UIButton = {
         let bb = UIButton()
         bb.setBackgroundImage(UIImage(named: "back"), for: .normal)
-        bb.tintColor = .white
         bb.addTarget(self, action: #selector(actionBack), for: .touchUpInside)
         return bb
     }()
@@ -65,6 +71,7 @@ class LoginController: UIViewController{
     
     func configAllElements(){
         view.addSubview(customTopImageView)
+        view.addSubview(loginLabel)
         view.addSubview(customBotttomImageView)
         view.addSubview(backButton)
         view.addSubview(loginButton)
@@ -74,6 +81,8 @@ class LoginController: UIViewController{
     func configConstraints(){
         customBotttomImageView.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor, paddingTop: 150)
         customBotttomImageView.setDimensions(width: 800, height: 800)
+        
+        loginLabel.anchor(top: view.topAnchor, left: view.leftAnchor, paddingTop: 100, paddingLeft: 40)
         
         customTopImageView.anchor(top: view.topAnchor, left: view.leftAnchor, width: 400, height: 400)
     
