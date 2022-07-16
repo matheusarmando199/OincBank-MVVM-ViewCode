@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1521520728835DC900E2DD7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1521520628835DC900E2DD7F /* GoogleService-Info.plist */; };
 		15274782287D68B600B9478E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15274781287D68B600B9478E /* HomeController.swift */; };
 		15274784287D699800B9478E /* CartoesContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15274783287D699800B9478E /* CartoesContoller.swift */; };
 		15274786287D69B800B9478E /* LojaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15274785287D69B800B9478E /* LojaController.swift */; };
@@ -20,9 +21,11 @@
 		1575F61D287CD3DE002D385C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1575F61C287CD3DE002D385C /* SceneDelegate.swift */; };
 		1575F627287CD3E0002D385C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1575F625287CD3E0002D385C /* LaunchScreen.storyboard */; };
 		1575F636287CD77F002D385C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1575F635287CD77F002D385C /* MainTabBarController.swift */; };
+		7884014C622A30A66E27D454 /* Pods_OincBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1969F067DCA6A5997C1C1EA7 /* Pods_OincBank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1521520628835DC900E2DD7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15274781287D68B600B9478E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		15274783287D699800B9478E /* CartoesContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoesContoller.swift; sourceTree = "<group>"; };
 		15274785287D69B800B9478E /* LojaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojaController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		1575F626287CD3E0002D385C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1575F628287CD3E0002D385C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1575F635287CD77F002D385C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1969F067DCA6A5997C1C1EA7 /* Pods_OincBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OincBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6925E9C284FC359A34585CB6 /* Pods-OincBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OincBank.debug.xcconfig"; path = "Target Support Files/Pods-OincBank/Pods-OincBank.debug.xcconfig"; sourceTree = "<group>"; };
+		F6E35398D9A277786C61DABC /* Pods-OincBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OincBank.release.xcconfig"; path = "Target Support Files/Pods-OincBank/Pods-OincBank.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7884014C622A30A66E27D454 /* Pods_OincBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +73,8 @@
 			children = (
 				1575F619287CD3DE002D385C /* OincBank */,
 				1575F618287CD3DE002D385C /* Products */,
+				CEC446847F49D0C904012140 /* Pods */,
+				9406430AAF12FB4748C36974 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +100,7 @@
 				1575F625287CD3E0002D385C /* LaunchScreen.storyboard */,
 				1575F628287CD3E0002D385C /* Info.plist */,
 				152B3F8828834B88003376F8 /* Assets.xcassets */,
+				1521520628835DC900E2DD7F /* GoogleService-Info.plist */,
 			);
 			path = OincBank;
 			sourceTree = "<group>";
@@ -144,6 +154,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9406430AAF12FB4748C36974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1969F067DCA6A5997C1C1EA7 /* Pods_OincBank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC446847F49D0C904012140 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6925E9C284FC359A34585CB6 /* Pods-OincBank.debug.xcconfig */,
+				F6E35398D9A277786C61DABC /* Pods-OincBank.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1575F62B287CD3E0002D385C /* Build configuration list for PBXNativeTarget "OincBank" */;
 			buildPhases = (
+				F4393DF2AF17013765B95A45 /* [CP] Check Pods Manifest.lock */,
 				1575F613287CD3DE002D385C /* Sources */,
 				1575F614287CD3DE002D385C /* Frameworks */,
 				1575F615287CD3DE002D385C /* Resources */,
+				7C1E7DD2C1A44311329453E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,10 +234,53 @@
 			files = (
 				152B3F8928834B88003376F8 /* Assets.xcassets in Resources */,
 				1575F627287CD3E0002D385C /* LaunchScreen.storyboard in Resources */,
+				1521520728835DC900E2DD7F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C1E7DD2C1A44311329453E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OincBank/Pods-OincBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OincBank/Pods-OincBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OincBank/Pods-OincBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4393DF2AF17013765B95A45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OincBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1575F613287CD3DE002D385C /* Sources */ = {
@@ -358,6 +431,7 @@
 		};
 		1575F62C287CD3E0002D385C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6925E9C284FC359A34585CB6 /* Pods-OincBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +460,7 @@
 		};
 		1575F62D287CD3E0002D385C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E35398D9A277786C61DABC /* Pods-OincBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

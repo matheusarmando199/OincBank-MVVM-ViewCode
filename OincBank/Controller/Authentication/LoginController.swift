@@ -78,6 +78,11 @@ class LoginController: UIViewController{
         view.addSubview(loginStackView)
     }
     
+    func setUpDelegates(delegates: UITextFieldDelegate){
+        emailTextField.delegate = delegates
+        senhaTextField.delegate = delegates
+    }
+    
     func configConstraints(){
         customBotttomImageView.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor, paddingTop: 150)
         customBotttomImageView.setDimensions(width: 800, height: 800)
@@ -113,6 +118,12 @@ class LoginController: UIViewController{
         configUI()
         configAllElements()
         configConstraints()
+        setUpDelegates(delegates: self)
     }
 }
     
+extension LoginController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+}

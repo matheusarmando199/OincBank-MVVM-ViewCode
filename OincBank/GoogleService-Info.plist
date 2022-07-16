@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>503709054079-0p45774djoecitklo5e0naldpd2ttu07.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.503709054079-0p45774djoecitklo5e0naldpd2ttu07</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBFtAd6e7Wa6eQioYsQdHf-34TgGgzWCIE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>503709054079</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.listaExercicios.OincBank</string>
+	<key>PROJECT_ID</key>
+	<string>oincbank-1b38b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>oincbank-1b38b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:503709054079:ios:188e1f6cba275e924dbb4a</string>
+</dict>
+</plist>
