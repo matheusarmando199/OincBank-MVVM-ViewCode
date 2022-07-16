@@ -52,4 +52,11 @@ class Utilities{
         lb.setDimensions(width: 300, height: 50)
         return lb
     }
+    
+    func configStackView(eixo: NSLayoutConstraint.Axis, espacoEntreViews: CGFloat, views: [UIView] ) -> UIStackView{
+        let stackView = UIStackView(arrangedSubviews: views)
+        stackView.axis = eixo
+        stackView.spacing = espacoEntreViews
+        return stackView
+    }
 }

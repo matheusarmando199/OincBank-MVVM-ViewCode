@@ -26,7 +26,7 @@ class FirsController: UIViewController{
     
     lazy var loginButton: UIButton = {
         let lb = Utilities().myButton(titulo: "Login", backgroundColor: .systemPink, tituloColor: .white)
-        lb.addTarget(self, action: #selector(actionLogin), for: .touchUpInside)
+        lb.addTarget(self, action: #selector(actionChamarTelaLogin), for: .touchUpInside)
         return lb
     }()
     lazy var RegistroButton: UIButton = {
@@ -35,7 +35,7 @@ class FirsController: UIViewController{
         lb.setTitle("Ainda não é um Oincer, Cadastre-se", for: .normal)
         lb.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         lb.setTitleColor(.systemPink, for: .normal)
-        lb.addTarget(self, action: #selector(actionRegistro), for: .touchUpInside)
+        lb.addTarget(self, action: #selector(actionChamarTelaRegistro), for: .touchUpInside)
         return lb
     }()
     
@@ -66,11 +66,11 @@ class FirsController: UIViewController{
     
     // MARK: - Funções Target
 
-    @objc func actionLogin(){
+    @objc func actionChamarTelaLogin(){
         navigationController?.pushViewController(LoginController(), animated: true)
     }
     
-    @objc func actionRegistro(){
+    @objc func actionChamarTelaRegistro(){
         navigationController?.pushViewController(RegistroController(), animated: true)
     }
     

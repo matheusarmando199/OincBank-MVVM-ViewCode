@@ -50,7 +50,12 @@ class LoginController: UIViewController{
     }()
     lazy var loginButton: UIButton = {
         let lb = Utilities().myButton(titulo: "Login", backgroundColor: .white, tituloColor: .systemPink)
+        lb.addTarget(self, action: #selector(ActionLogin), for: .touchUpInside)
         return lb
+    }()
+    lazy var loginStackView: UIStackView = {
+        let stackView = Utilities().configStackView(eixo: .vertical, espacoEntreViews: 20, views: [emailContainerView, senhaContainerView])
+        return stackView
     }()
     // MARK: - Funções  SetUp
     
@@ -63,6 +68,7 @@ class LoginController: UIViewController{
         view.addSubview(customBotttomImageView)
         view.addSubview(backButton)
         view.addSubview(loginButton)
+        view.addSubview(loginStackView)
     }
     
     func configConstraints(){
@@ -74,21 +80,20 @@ class LoginController: UIViewController{
         backButton.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, paddingTop: 15, paddingLeft: 20,
                           width: 30, height: 20)
         
-        let stackView = UIStackView(arrangedSubviews: [emailContainerView, senhaContainerView])
-        stackView.axis = .vertical
-        stackView.spacing = 20
-        view.addSubview(stackView)
-        stackView.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 16, paddingBottom: 120, paddingRight: 16)
+        loginStackView.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 16, paddingBottom: 120, paddingRight: 16)
         
-        loginButton.centerX(inView: view, topAnchor: stackView.bottomAnchor, paddingTop: 20)
+        loginButton.centerX(inView: view, topAnchor: loginStackView.bottomAnchor, paddingTop: 20)
         
     }
-    
     
     // MARK: - Funções Target
 
     @objc func actionBack(){
         navigationController?.pushViewController(FirsController(), animated: true)
+    }
+    
+    @objc func ActionLogin(){
+        navigationController?.pushViewController(MainTabBarController(), animated: true)
     }
     
     
