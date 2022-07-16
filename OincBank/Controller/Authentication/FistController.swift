@@ -25,12 +25,7 @@ class FirsController: UIViewController{
     }()
     
     lazy var loginButton: UIButton = {
-        let lb = UIButton()
-        lb.backgroundColor = .systemPink
-        lb.setTitle("Login", for: .normal)
-        lb.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
-        lb.setTitleColor(.white, for: .normal)
-        lb.layer.cornerRadius = 10
+        let lb = Utilities().myButton(titulo: "Login", backgroundColor: .systemPink, tituloColor: .white)
         lb.addTarget(self, action: #selector(actionLogin), for: .touchUpInside)
         return lb
     }()
@@ -65,7 +60,6 @@ class FirsController: UIViewController{
         customBotttomImageView.setDimensions(width: 800, height: 800)
         
         loginButton.centerX(inView: view, topAnchor: oincBankImageView.bottomAnchor, paddingTop: 130)
-        loginButton.setDimensions(width: 300, height: 50)
         
         RegistroButton.centerX(inView: view, topAnchor: loginButton.bottomAnchor, paddingTop: 20)
     }

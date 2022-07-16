@@ -29,6 +29,29 @@ class LoginController: UIViewController{
         bb.addTarget(self, action: #selector(actionBack), for: .touchUpInside)
         return bb
     }()
+    lazy var emailContainerView: UIView = {
+        let emailImage = UIImage(named: "email")
+        let ecv = Utilities().imputContainerView(imagem: emailImage, textField: emailTextField)
+        return ecv
+    }()
+    lazy var senhaContainerView: UIView = {
+        let cadeadoImage = UIImage(named: "cadeado")
+        let ecv = Utilities().imputContainerView(imagem: cadeadoImage, textField: senhaTextField)
+        return ecv
+    }()
+    let emailTextField: UITextField = {
+        let etf = Utilities().myTextField(myplaceholder: "Email")
+        return etf
+    }()
+    let senhaTextField: UITextField = {
+        let etf = Utilities().myTextField(myplaceholder: "Senha")
+        etf.isSecureTextEntry = true
+        return etf
+    }()
+    lazy var loginButton: UIButton = {
+        let lb = Utilities().myButton(titulo: "Login", backgroundColor: .white, tituloColor: .systemPink)
+        return lb
+    }()
     // MARK: - Funções  SetUp
     
     func configUI(){
@@ -39,21 +62,27 @@ class LoginController: UIViewController{
         view.addSubview(customTopImageView)
         view.addSubview(customBotttomImageView)
         view.addSubview(backButton)
+        view.addSubview(loginButton)
     }
     
     func configConstraints(){
         customBotttomImageView.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor, paddingTop: 150)
         customBotttomImageView.setDimensions(width: 800, height: 800)
         
-        customTopImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        customTopImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        customTopImageView.setDimensions(width: 400, height: 400)
-        
-        backButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15).isActive = true
-        backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        backButton.setDimensions(width: 40, height: 20)
-    }
+        customTopImageView.anchor(top: view.topAnchor, left: view.leftAnchor, width: 400, height: 400)
     
+        backButton.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, paddingTop: 15, paddingLeft: 20,
+                          width: 30, height: 20)
+        
+        let stackView = UIStackView(arrangedSubviews: [emailContainerView, senhaContainerView])
+        stackView.axis = .vertical
+        stackView.spacing = 20
+        view.addSubview(stackView)
+        stackView.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 16, paddingBottom: 120, paddingRight: 16)
+        
+        loginButton.centerX(inView: view, topAnchor: stackView.bottomAnchor, paddingTop: 20)
+        
+    }
     
     
     // MARK: - Funções Target

@@ -10,6 +10,7 @@
 		15274782287D68B600B9478E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15274781287D68B600B9478E /* HomeController.swift */; };
 		15274784287D699800B9478E /* CartoesContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15274783287D699800B9478E /* CartoesContoller.swift */; };
 		15274786287D69B800B9478E /* LojaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15274785287D69B800B9478E /* LojaController.swift */; };
+		152B3F872882BE26003376F8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152B3F862882BE26003376F8 /* Utilities.swift */; };
 		155284A0287E5C8100583893 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1552849F287E5C8100583893 /* Extensions.swift */; };
 		155284A3287E72F400583893 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155284A2287E72F400583893 /* LoginController.swift */; };
 		155284A5287E730500583893 /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155284A4287E730500583893 /* RegistroController.swift */; };
@@ -25,6 +26,7 @@
 		15274781287D68B600B9478E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		15274783287D699800B9478E /* CartoesContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoesContoller.swift; sourceTree = "<group>"; };
 		15274785287D69B800B9478E /* LojaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojaController.swift; sourceTree = "<group>"; };
+		152B3F862882BE26003376F8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1552849F287E5C8100583893 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		155284A2287E72F400583893 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		155284A4287E730500583893 /* RegistroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1552849F287E5C8100583893 /* Extensions.swift */,
+				152B3F862882BE26003376F8 /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				15274782287D68B600B9478E /* HomeController.swift in Sources */,
 				1575F61B287CD3DE002D385C /* AppDelegate.swift in Sources */,
+				152B3F872882BE26003376F8 /* Utilities.swift in Sources */,
 				1575F61D287CD3DE002D385C /* SceneDelegate.swift in Sources */,
 				1575F636287CD77F002D385C /* MainTabBarController.swift in Sources */,
 				15274784287D699800B9478E /* CartoesContoller.swift in Sources */,
