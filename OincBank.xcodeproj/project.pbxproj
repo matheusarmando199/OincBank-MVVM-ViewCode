@@ -14,7 +14,6 @@
 		152B3F872882BE26003376F8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152B3F862882BE26003376F8 /* Utilities.swift */; };
 		152B3F8928834B88003376F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152B3F8828834B88003376F8 /* Assets.xcassets */; };
 		155284A0287E5C8100583893 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1552849F287E5C8100583893 /* Extensions.swift */; };
-		155284A3287E72F400583893 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155284A2287E72F400583893 /* LoginController.swift */; };
 		155284A5287E730500583893 /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155284A4287E730500583893 /* RegistroController.swift */; };
 		155284A7287E74ED00583893 /* FistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155284A6287E74ED00583893 /* FistController.swift */; };
 		1575F61B287CD3DE002D385C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1575F61A287CD3DE002D385C /* AppDelegate.swift */; };
@@ -32,7 +31,6 @@
 		152B3F862882BE26003376F8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		152B3F8828834B88003376F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1552849F287E5C8100583893 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		155284A2287E72F400583893 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		155284A4287E730500583893 /* RegistroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
 		155284A6287E74ED00583893 /* FistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FistController.swift; sourceTree = "<group>"; };
 		1575F617287CD3DE002D385C /* OincBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OincBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				155284A6287E74ED00583893 /* FistController.swift */,
-				155284A2287E72F400583893 /* LoginController.swift */,
 				155284A4287E730500583893 /* RegistroController.swift */,
 			);
 			path = Authentication;
@@ -168,7 +165,6 @@
 				6925E9C284FC359A34585CB6 /* Pods-OincBank.debug.xcconfig */,
 				F6E35398D9A277786C61DABC /* Pods-OincBank.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,7 +290,6 @@
 				1575F636287CD77F002D385C /* MainTabBarController.swift in Sources */,
 				15274784287D699800B9478E /* CartoesContoller.swift in Sources */,
 				155284A7287E74ED00583893 /* FistController.swift in Sources */,
-				155284A3287E72F400583893 /* LoginController.swift in Sources */,
 				15274786287D69B800B9478E /* LojaController.swift in Sources */,
 				155284A5287E730500583893 /* RegistroController.swift in Sources */,
 				155284A0287E5C8100583893 /* Extensions.swift in Sources */,
